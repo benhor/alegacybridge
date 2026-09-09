@@ -9,8 +9,17 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            width: 100%;
             overflow: hidden;
-            background-color: #f4f4f4; /* Gives a clean, neutral background behind your book */
+            background-color: #1e1e1e; /* Gives a premium, dark canvas background */
+        }
+        /* This wrapper scales the iframe up and crops out external platform headers */
+        .wrapper {
+            position: absolute;
+            top: -50px; /* Adjust this value if you need to hide a top bar */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 50px);
         }
         iframe {
             border: none;
@@ -20,7 +29,8 @@
     </style>
 </head>
 <body>
-    <!-- Adding '?embed' securely strips away the Heyzine website frame -->
-    <iframe src="https://heyzine.com"></iframe>
+    <div class="wrapper">
+        <iframe src="https://heyzine.com"></iframe>
+    </div>
 </body>
 </html>
