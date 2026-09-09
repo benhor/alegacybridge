@@ -11,26 +11,25 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
-            background-color: #1e1e1e; /* Gives a premium, dark canvas background */
+            background-color: #1e1e1e; /* Creates a clean, premium background canvas */
         }
-        /* This wrapper scales the iframe up and crops out external platform headers */
-        .wrapper {
-            position: absolute;
-            top: -50px; /* Adjust this value if you need to hide a top bar */
-            left: 0;
-            width: 100%;
-            height: calc(100% + 50px);
-        }
-        iframe {
+        .fp-iframe {
             border: none;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <iframe src="https://heyzine.com"></iframe>
-    </div>
+    <!-- Using official parameters to force clean fullscreen execution -->
+    <iframe 
+        src="https://heyzine.com" 
+        class="fp-iframe" 
+        scrolling="no" 
+        allowfullscreen="allowfullscreen">
+    </iframe>
 </body>
 </html>
