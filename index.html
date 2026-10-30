@@ -2,106 +2,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>A Legacy Bridge</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      min-height: 100%;
-      font-family: Arial, sans-serif;
-    }
-    .tickets {
-      text-align: center;
-      padding: 12px;
-      background: #ffffff;
-    }
-    .tickets h2 {
-      color: #1a5d1a;
-    }
-    .tickets p {
-      font-size: 18px;
-      color: #333333;
-    }
-    .ticket-button {
-      display: inline-block;
-      color: white;
-      padding: 12px 24px;
-      margin: 8px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 6px;
-    }
-    .single {
-      background: #1a5d1a;
-    }
-    .couple {
-      background: #b08d35;
-    }
-    .nomination {
-      text-align: center;
-      padding: 24px 12px;
-      background: #f7f7f2;
-    }
-    .nomination h2 {
-      color: #1a5d1a;
-    }
-    .nomination iframe {
-      display: block;
-      width: 100%;
-      height: 1200px;
-      border: none;
-    }
-    .brochure {
-      display: block;
-      width: 100%;
-      height: 85vh;
-      border: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Legacy Bridge</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+.tickets {
+  text-align: center;
+  padding: 20px 12px;
+  background: #ffffff;
+}
+.tickets h2, .nomination h2 {
+  color: #1a5d1a;
+}
+.tickets p {
+  font-size: 18px;
+}
+.ticket-button {
+  display: inline-block;
+  color: white;
+  padding: 12px 24px;
+  margin: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.single {
+  background: #1a5d1a;
+}
+.couple {
+  background: #b08d35;
+}
+.nomination {
+  text-align: center;
+  padding: 24px 12px;
+  background: #f7f7f2;
+}
+.nomination-link {
+  display: inline-block;
+  background: #1a5d1a;
+  color: white;
+  padding: 14px 24px;
+  margin: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.brochure {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  border: none;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="tickets">
-    <h2>Retired Seniors Service Awards Banquet</h2>
-    <p>Friday, December 18, 2026</p>
+<div class="tickets">
+  <h2>Retired Seniors Service Awards Banquet</h2>
+  <p>Friday, December 18, 2026</p>
 
-    <a class="ticket-button single"
-       href="https://buy.stripe.com/fZu00bdIc3Fe0F339F2sM02"
-       target="_blank" rel="noopener noreferrer">
-      BUY ONE TICKET — $45
-    </a>
+  <a class="ticket-button single"
+     href="https://buy.stripe.com/fZu00bdIc3Fe0F339F2sM02"
+     target="_blank" rel="noopener noreferrer">
+    BUY ONE TICKET — $45
+  </a>
 
-    <a class="ticket-button couple"
-       href="https://buy.stripe.com/cNi3cngUodfObjH9y32sM03"
-       target="_blank" rel="noopener noreferrer">
-      BUY TWO TICKETS — $75
-    </a>
-  </div>
+  <a class="ticket-button couple"
+     href="https://buy.stripe.com/cNi3cngUodfObjH9y32sM03"
+     target="_blank" rel="noopener noreferrer">
+    BUY TWO TICKETS — $75
+  </a>
+</div>
 
-  <div class="nomination">
-    <h2>Nominate Someone for a Retired Seniors Service Award</h2>
-    <p>Recognize a retired senior who has made a meaningful contribution to the community.</p>
+<div class="nomination">
+  <h2>Nominate Someone for a Retired Seniors Service Award</h2>
 
-    <iframe
-      src="https://tally.so/embed/gbajpD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-      title="Retired Seniors Service Awards Nomination Form">
-    </iframe>
-  </div>
+  <p>
+    Recognize a retired senior who has made a meaningful
+    contribution to the community.
+  </p>
 
-  <iframe
-    class="brochure"
-    src="https://heyzine.com/flip-book/ecbd92cce7.html"
-    title="A Legacy Bridge Brochure"
-    allowfullscreen>
-  </iframe>
+  <a class="nomination-link" href="nomination.html">
+    SUBMIT YOUR NOMINATION ONLINE
+  </a>
+</div>
 
-</body>
-</html>
-
+<iframe
+  class="brochure"
+  src="https://heyzine.com/flip-book/ecbd92cce7.html"
+  title="A Legacy Bridge Brochure"
+  allowfullscreen>
+</iframe>
 
 </body>
 </html>
